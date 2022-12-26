@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="practice pyscript">
+    <meta name="keywords" content="HTML, CSS, Pyscript">
+    <meta name="author" content="Moni Keo">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header padding">
+            <div class="container">
+                <h1>calc</h1>
+                <div class="header-right container">
+                    <h1>THEME</h1>
+                </div>
+            </div>
+        </header>
+        <section class="screen-show padding container">
+            <p id="text-show" class="text-show"></p>
+        </section>
+        <main class="button-box padding">
+            <div class="container">
+                <section class="row">
+                    <div class="container">
+                        <button class="button flex-size" value="7" id="btn_7" py-click="btn_click('btn_7')">7</button>
+                        <button class="button flex-size" value="8" id="btn_8" py-click="btn_click('btn_8')">8</button>
+                        <button class="button flex-size" value="9" id="btn_9" py-click="btn_click('btn_9')">9</button>
+                        <button class="button flex-size del-btn" id="btn_del" py-click="btn_click('btn_del')">DEL</button>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="container">
+                        <button class="button flex-size" value="4" id="btn_4" py-click="btn_click('btn_4')">4</button>
+                        <button class="button flex-size" value="5" id="btn_5" py-click="btn_click('btn_5')">5</button>
+                        <button class="button flex-size" value="6" id="btn_6" py-click="btn_click('btn_6')">6</button>
+                        <button class="button flex-size" value="+" id="btn_add" py-click="btn_click('btn_add')">+</button>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="container">
+                        <button class="button flex-size" value="1" id="btn_1" py-click="btn_click('btn_1')">1</button>
+                        <button class="button flex-size" value="2" id="btn_2" py-click="btn_click('btn_2')">2</button>
+                        <button class="button flex-size" value="3" id="btn_3" py-click="btn_click('btn_3')">3</button>
+                        <button class="button flex-size" value="-" id="btn_subtraction" py-click="btn_click('btn_subtraction')">-</button>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="container">
+                        <button class="button flex-size" value="." id="btn_point" py-click="btn_click('btn_point')">.</button>
+                        <button class="button flex-size" value="0" id="btn_0" py-click="btn_click('btn_0')">0</button>
+                        <button class="button flex-size" value="/" id="btn_division" py-click="btn_click('btn_division')">/</button>
+                        <button class="button flex-size" value="*" id="btn_multiplication" py-click="btn_click('btn_multiplication')">x</button>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="container">
+                        <button class="button flex-size reset-btn" id="btn_reset" py-click="btn_click('btn_reset')">RESET</button>
+                        <button class="button flex-size equal-btn" id="btn_equal" py-click="btn_click('btn_equal')">=</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <py-script src="pyscript.py"></py-script>
+</body>
+</html>
